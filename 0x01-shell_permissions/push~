@@ -1,10 +1,22 @@
 #!/bin/bash
 
-ls #list file after changing persmission to see if its now executableqs
-
 echo "enter file name: "
 
 read file
+
+touch $file #creates the files
+
+ls #list file after adding create file
+
+echo "Enter the command text from second line"
+
+read command
+
+echo 'echo "#!/bin/bash\n"'$command'"\n"'
+
+#echo "enter file name: "
+
+#read file
 
 chmod 755 $file #change persmission for file
 
