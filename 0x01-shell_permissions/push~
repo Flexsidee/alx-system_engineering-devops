@@ -1,11 +1,12 @@
 #!/bin/bash
+
+ls #list file after changing persmission to see if its now executableqs
+
 echo "enter file name: "
 
 read file
 
 chmod 755 $file #change persmission for file
-
-ls #list file after changing persmission to see if its now executable
 
 echo "enter a commit message: " 
 
@@ -19,4 +20,4 @@ git status -s #checking stagin area after commit
 
 git push #push new commits to main
 
-git log --oneline #view all commits after pushing
+echo "TASK IS DONE, COMMIT PUSH TO REMOTE"
