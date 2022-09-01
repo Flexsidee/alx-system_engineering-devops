@@ -1,18 +1,14 @@
 #!/bin/bash
 
-echo "enter file name: "
-
-read file
-
-touch $file #creates the files
-
-ls #list file after adding create file
-
 echo "Enter the command text from second line"
-
 read command
 
+echo "enter file name: "
+read file
+
 echo -e "#!/bin/bash\n"$command"\n" > $file
+
+ls #list file after adding create file
 
 chmod 755 $file #change persmission for file
 
