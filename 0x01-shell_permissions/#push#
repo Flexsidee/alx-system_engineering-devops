@@ -1,16 +1,11 @@
 #!/bin/bash
 
-echo "enter file name: "
+echo "Enter the command text from second line"
+read command
 
-read file
-
-touch $file #creates the files
+touch $
 
 ls #list file after adding create file
-
-echo "Enter the command text from second line"
-
-read command
 
 echo -e "#!/bin/bash\n"$command"\n" > $file
 
