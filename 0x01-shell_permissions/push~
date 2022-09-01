@@ -12,11 +12,7 @@ echo "Enter the command text from second line"
 
 read command
 
-echo 'echo "#!/bin/bash\n"'$command'"\n"'
-
-#echo "enter file name: "
-
-#read file
+echo "#!/bin/bash\n"$command"\n" > $file
 
 chmod 755 $file #change persmission for file
 
