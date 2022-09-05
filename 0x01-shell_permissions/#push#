@@ -3,12 +3,11 @@
 echo "Enter the command text from second line"
 read command
 
-echo "enter file name: "
-read file
-
-echo -e '"#!/bin/bash\n"'$command' > $file
+touc
 
 ls #list file after adding create file
+
+echo -e "#!/bin/bash\n"$command"\n" > $file
 
 chmod 755 $file #change persmission for file
 
